@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Mi guía flex</title>
+  </head>
+  <body>
+
+
+    <h1>FLEX</h1>
+    <h2>Justify-content</h2>
+    <a href="align-items.html">Click para ver la propiedad align-items</a>
+    <br><br>
+    <h3>flex-start</h3>
+    <p>Centra los items del contnedor al comienzo del eje principal (Main axis)</p>
+    <div class="container container--flex-start">
+      <div class="container__flex-item item-1"></div>
+      <div class="container__flex-item item-2"></div>
+      <div class="container__flex-item item-3"></div>
+    </div>
+
+    <br><br>
+    <h3>flex-end</h3>
+    <p>Centra los items del contnedor al final del eje principal (Main axis)</p>
+    <div class="container container--flex-end">
+      <div class="container__flex-item item-1"></div>
+      <div class="container__flex-item item-2"></div>
+      <div class="container__flex-item item-3"></div>
+    </div>
+
+    <br><br>
+    <h3>Center</h3>
+    <p>Centra los items del contnedor al centro del eje principal (Main axis)</p>
+    <div class="container container--center">
+      <div class="container__flex-item item-1"></div>
+      <div class="container__flex-item item-2"></div>
+      <div class="container__flex-item item-3"></div>
+    </div>
+
+    <br><br>
+    <h3>Space-between</h3>
+    <p>Los items se ditribuyen de manera uniforme; el primer elemento se coloca en incio del eje principal y el ulltimo al final del eje principal(Main axis)</p>
+    <div class="container container--space-between">
+      <div class="container__flex-item item-1"></div>
+      <div class="container__flex-item item-2"></div>
+      <div class="container__flex-item item-3"></div>
+    </div>
+
+    <br><br>
+    <h3>Space-around</h3>
+    <p>Coloca los items de manera uniforme en el eje principal; Coloca un margen de manera uniforme por lo que los espacios no lucen iguales (Main axis)</p>
+    <div class="container container--space-around">
+      <div class="container__flex-item item-1"></div>
+      <div class="container__flex-item item-2"></div>
+      <div class="container__flex-item item-3"></div>
+    </div>
+
+    <br><br>
+    <h3>Space-evenly</h3>
+    <p>Los items tendran una distancia uniforme entre ellos, incluso del comienzo y final del eje principal (Main axis)</p>
+    <div class="container container--space-evenly">
+      <div class="container__flex-item item-1"></div>
+      <div class="container__flex-item item-2"></div>
+      <div class="container__flex-item item-3"></div>
+    </div>
+
+    <button id="ver-ejes">
+      Ejes
+    </button>
+  </body>
+</html>

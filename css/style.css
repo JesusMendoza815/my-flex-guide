@@ -1,0 +1,116 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(23, 23, 23);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h3 {
+    color: yellow;
+}
+p {
+    width: 85%;
+}
+a {
+    color: gray;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    background-color: rgb(70, 70, 70);
+}
+
+.container__flex-item {
+    width: 20%;
+    height: 200px;
+    background-color: gray;
+    border: 1px solid rgb(255, 255, 255);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item-1 {
+    background-image: url(/images/broly-base.webp);
+}
+.item-2 {
+    background-image: url(/images/broly-ozaru.webp);
+}
+.item-3 {
+    background-image: url(/images/broly-full.webp);
+}
+
+/*Justify-content*/
+.container--flex-start {
+    justify-content: flex-start;
+}
+
+.container--flex-end {
+    justify-content: flex-end;
+}
+
+.container--center {
+    justify-content: center;
+}
+.container--space-between {
+    justify-content: space-between;
+}
+.container--space-around {
+    justify-content: space-around;
+}
+.container--space-evenly {
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+
+button {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    border-radius: 0px 25px 25px 0px;
+    background-color: black;
+    border: 1px solid yellow;
+    color: white;
+    min-width: 4rem;
+    padding: 0.5rem;
+    z-index: 1;
+}
+button:active {
+    cursor: pointer;
+    background-image: url(/images/img-ejes.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    height: 32%;
+    text-align:center;
+    top: calc(50% - 16%);
+}
+
+
+
+@media screen and (min-width: 992px) {
+    body {
+        flex-flow: row wrap;
+    }
+    .container  {
+        width: 30%;
+    }
+    h1,h3,p,a {
+        width: 90%;
+    }
+    button:active {
+        height: 50%;
+        width: 50%;
+        top: calc(50% - 45%);
+        border-radius: 0;
+    }
+}
